@@ -1,0 +1,24 @@
+{
+  "name": "fastfront",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "core-js": "^3.8.3",
+    "vue": "^3.2.39",
+    "vue-resource": "^1.5.3",
+    "vue-router": "^4.0.3",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-service": "~5.0.0"
+  },
+  "_id": "fastfront@0.1.0",
+  "readme": "ERROR: No README data found!"
+}
