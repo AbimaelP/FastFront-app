@@ -66,7 +66,7 @@ export default {
   },
   methods: {
     authUser(){
-        axios.get('https://6b8c-2804-868-d048-6c9e-f145-c9aa-d90d-4d85.sa.ngrok.io/api/user', {
+        axios.get(`${process.env.VUE_APP_URL}api/user`, {
           headers: {
             Authorization: 'Bearer ' + localStorage.getItem('token') //the token is a variable which holds the token
           }
