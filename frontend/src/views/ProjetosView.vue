@@ -39,7 +39,7 @@
     methods: {
       authUser() {
         axios
-          .get("http://127.0.0.1:8000/api/project", {
+          .get("https://9a7c-2804-868-d048-6c9e-458-1ad4-f50f-3f76.sa.ngrok.io/api/project", {
             headers: {
               Authorization: "Bearer " + localStorage.getItem("token"), //the token is a variable which holds the token
             },
