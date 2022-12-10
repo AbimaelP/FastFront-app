@@ -73,7 +73,7 @@
         }
       },
       async logout(){
-        await axios.get('http://127.0.0.1:8000/api/logout', {
+        await axios.get(`${process.env.VUE_APP_URL}api/logout`, {
           headers: {
             Authorization: 'Bearer ' + localStorage.getItem('token') //the token is a variable which holds the token
           }
