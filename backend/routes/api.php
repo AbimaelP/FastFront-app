@@ -20,7 +20,7 @@ use App\Http\Controllers\UserController;
 //ROTAS ACESSADAS POR USUARIOS NÃO LOGADOS
 Route::post('register',[UserController::class, 'register']);
 Route::post('login',[UserController::class, 'login']);
-
+Route::get('teste',[UserController::class, 'teste']);
 
 Route::middleware('auth:sanctum')->group(function(){
     //User interactions authenticated
