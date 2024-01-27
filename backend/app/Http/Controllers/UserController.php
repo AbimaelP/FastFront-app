@@ -11,6 +11,9 @@ use Illuminate\Support\Facades\DB;
 class UserController extends Controller
 {
     //ROTA DE CADASTRO
+    public function teste(){
+        return response('Funcionaaaaaaaaaaaa');
+    }
     public function register(Request $request){
         $messages = [
             'required' => 'O :attribute é obrigatório!',
