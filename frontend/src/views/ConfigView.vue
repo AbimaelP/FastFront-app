@@ -39,7 +39,7 @@ export default {
     },
     methods: {
         edit() {
-           axios.post(`${process.env.VUE_APP_URL}api/edit`,this.formData,{headers: {
+           axios.post(`${process.env.VUE_APP_URL}/edit`,this.formData,{headers: {
                 Authorization: 'Bearer ' + localStorage.getItem('token') //the token is a variable which holds the token
             }}).then((response)=>{
                 console.log(response.data)

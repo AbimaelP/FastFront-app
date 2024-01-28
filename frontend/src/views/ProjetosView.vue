@@ -39,7 +39,7 @@
     methods: {
       authUser() {
         axios
-          .get(`${process.env.VUE_APP_URL}api/project`, {
+          .get(`${process.env.VUE_APP_URL}/project`, {
             headers: {
               Authorization: "Bearer " + localStorage.getItem("token"), //the token is a variable which holds the token
             },
@@ -54,7 +54,7 @@
       },
       destroy(id) {
         axios
-          .delete(`${process.env.VUE_APP_URL}api/delete-project/${id}`, {
+          .delete(`${process.env.VUE_APP_URL}/delete-project/${id}`, {
             headers: {
               Authorization: "Bearer " + localStorage.getItem("token"), //the token is a variable which holds the token
             },

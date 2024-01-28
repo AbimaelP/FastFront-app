@@ -66,7 +66,7 @@ export default {
   },
   methods: {
     authUser(){
-        axios.get(`${process.env.VUE_APP_URL}api/user`, {
+        axios.get(`${process.env.VUE_APP_URL}/user`, {
           headers: {
             Authorization: 'Bearer ' + localStorage.getItem('token') //the token is a variable which holds the token
           }
@@ -80,7 +80,7 @@ export default {
       this.items.page = this.page
       this.items.id = this.user.id
 
-      axios.post(`${process.env.VUE_APP_URL}api/create-project`,this.items,{headers: {
+      axios.post(`${process.env.VUE_APP_URL}/create-project`,this.items,{headers: {
                 Authorization: 'Bearer ' + localStorage.getItem('token') //the token is a variable which holds the token
             }}).then((response)=>{
                 console.log(response.data)

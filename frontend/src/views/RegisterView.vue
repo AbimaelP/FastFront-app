@@ -31,7 +31,7 @@ export default {
     },
     methods: {
         registerUser() {
-           axios.post(`${process.env.VUE_APP_URL}api/register`,this.formData).then((response)=>{
+           axios.post(`${process.env.VUE_APP_URL}/register`,this.formData).then((response)=>{
             this.error.validate = false
             window.location.href = '/login'
            })

@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     async authUser(){
-        let response = await axios.get(`${process.env.VUE_APP_URL}api/user`, {
+        let response = await axios.get(`${process.env.VUE_APP_URL}/user`, {
           headers: {
             Authorization: 'Bearer ' + localStorage.getItem('token') //the token is a variable which holds the token
           }

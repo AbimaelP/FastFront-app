@@ -60,7 +60,7 @@ export default {
   },
   methods: {
     redirectBtn() {
-      axios.get(`${process.env.VUE_APP_URL}api/project`, {
+      axios.get(`${process.env.VUE_APP_URL}/project`, {
             headers: {
               Authorization: "Bearer " + localStorage.getItem("token"), //the token is a variable which holds the token
             },

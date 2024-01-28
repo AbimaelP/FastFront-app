@@ -36,7 +36,7 @@ export default {
     },
     methods: {
         login() {
-           axios.post(`${process.env.VUE_APP_URL}api/login`,this.formData).then((response)=>{
+           axios.post(`${process.env.VUE_APP_URL}/login`,this.formData).then((response)=>{
             localStorage.setItem('token',response.data.token)
             this.error.validate = false
             window.location.href = '/projetos'
