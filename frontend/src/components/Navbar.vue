@@ -44,7 +44,7 @@
     },
     methods:{
        authUser(){
-        axios.get(`${process.env.VUE_APP_URL}api/user`, {
+        axios.get(`${process.env.VUE_APP_URL}/user`, {
           headers: {
             Authorization: 'Bearer ' + localStorage.getItem('token') //the token is a variable which holds the token
           }
